@@ -24,7 +24,7 @@ shuffle(memoryCardsArray);
 
 function flipCard(this: HTMLElement) {
     if (isFlipped || this.classList.contains('flip') || flippedCards.length === 2) return;
-    this.classList.add('flip');         // 'this' refers to the current HTML element that triggered the flipCard function
+    this.classList.add('flip');         // 'this' refers to the current HTML element that triggered the flipCard function; instead of add possible toogle
     flippedCards.push(this);
 
     if (flippedCards.length === 2) {
